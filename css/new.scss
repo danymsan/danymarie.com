@@ -290,11 +290,48 @@ a.logo {
 				background-color: darken($gold, 5%);
 			}
 		}
+		&.blue {
+			background-color: $blue;
+			&:hover {
+				background-color: darken($blue, 4%);
+			}
+		}
+		&.orange {
+			background-color: $orange;
+			&:hover {
+				background-color: darken($orange, 4%);
+			}
+		}
+		&.ptrn-cube {
+			background-image: url("../img/new/ptrn-cube.png");
+			background-blend-mode: soft-light;
+		}
+		&.ptrn-diag-ribbon {
+			background-image: url("../img/new/ptrn-diag-ribbon.png");
+			background-repeat: no-repeat;
+			background-blend-mode: soft-light;
+		}
+		&.ptrn-dots {
+			background-image: url("../img/new/ptrn-confetti-dots.png");
+			background-blend-mode: soft-light;
+		}
+		&.ptrn-elegant {
+			background-image: url("../img/new/ptrn-elegant.png");
+			background-blend-mode: soft-light;
+		}
+		&.ptrn-shapes {
+			background-image: url("../img/new/ptrn-confetti-shapes.png");
+			background-blend-mode: luminosity;
+		}
+		&.ptrn-tri {
+			background-image: url("../img/new/ptrn-triangles.png");
+			background-blend-mode: soft-light;
+		}
 	}
 }
 
 .wall {
-	margin-top: 6em;
+	margin: 12em 0;
 	min-height: 610px;
 	display: block;
   position: relative;
@@ -304,7 +341,7 @@ a.logo {
   content: "";
 	background: url("../img/new/brick-wall.png");
 	background-repeat: no-repeat;
-  opacity: 0.4;
+  opacity: 0.2;
   top: 0;
   left: 0;
   bottom: 0;

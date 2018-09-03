@@ -5162,9 +5162,36 @@ a.logo {
       background-color: #F7B733; }
       .projects .card.gold:hover {
         background-color: #f6ae1a; }
+    .projects .card.blue {
+      background-color: #2d79b1; }
+      .projects .card.blue:hover {
+        background-color: #296ea1; }
+    .projects .card.orange {
+      background-color: #f3901d; }
+      .projects .card.orange:hover {
+        background-color: #ef860d; }
+    .projects .card.ptrn-cube {
+      background-image: url("../img/new/ptrn-cube.png");
+      background-blend-mode: soft-light; }
+    .projects .card.ptrn-diag-ribbon {
+      background-image: url("../img/new/ptrn-diag-ribbon.png");
+      background-repeat: no-repeat;
+      background-blend-mode: soft-light; }
+    .projects .card.ptrn-dots {
+      background-image: url("../img/new/ptrn-confetti-dots.png");
+      background-blend-mode: soft-light; }
+    .projects .card.ptrn-elegant {
+      background-image: url("../img/new/ptrn-elegant.png");
+      background-blend-mode: soft-light; }
+    .projects .card.ptrn-shapes {
+      background-image: url("../img/new/ptrn-confetti-shapes.png");
+      background-blend-mode: luminosity; }
+    .projects .card.ptrn-tri {
+      background-image: url("../img/new/ptrn-triangles.png");
+      background-blend-mode: soft-light; }
 
 .wall {
-  margin-top: 6em;
+  margin: 12em 0;
   min-height: 610px;
   display: block;
   position: relative; }
@@ -5173,7 +5200,7 @@ a.logo {
   content: "";
   background: url("../img/new/brick-wall.png");
   background-repeat: no-repeat;
-  opacity: 0.4;
+  opacity: 0.2;
   top: 0;
   left: 0;
   bottom: 0;
