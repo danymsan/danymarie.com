@@ -240,7 +240,7 @@ a.logo {
 		img {
 			margin-bottom: 2em;
 			transform: scale(1);
-			width: 450px;
+			width: 85%;
 			-webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
 			-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
 			box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
@@ -496,6 +496,16 @@ img.border { border: 1px solid #eee; }
 }
 
 /* Media Queries */
+@media screen and (max-width: 1024px) {
+	.project {
+		.card {
+			padding: 4em 3em;
+		}
+	}
+	.wall {
+		margin: 4em 0 8em;
+	}
+}
 @media screen and (max-width: 768px) {
 	.hero {
 		height: 380px;
@@ -536,7 +546,7 @@ img.border { border: 1px solid #eee; }
 
 @media screen and (max-width: 414px){
 	.wall {
-		margin: 4em 0 6em;
+		margin: 2em 0 4em;
 		min-height: 740px;
 	}
 	.about {
