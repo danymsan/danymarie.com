@@ -5382,6 +5382,7 @@ img.sf, img.ny {
   .proj-content section.grey {
     background-color: #f8f8f8; }
 .proj-content .caption {
+  color: #777;
   font-size: 13px;
   margin: 1.5em 0;
   display: block;
