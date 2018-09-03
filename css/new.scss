@@ -449,14 +449,6 @@ img.sf, img.ny {
 }
 
 
-
-.glow {
-	-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
-}
-
-
 // Project Styles
 .proj-header {
 	.container { padding-bottom: 6em; }
@@ -479,26 +471,6 @@ img.sf, img.ny {
 		background: -ms-linear-gradient(top, rgba(60,154,201,1) 0%, rgba(52,101,176,1) 100%);
 		background: linear-gradient(to bottom, rgba(60,154,201,1) 0%, rgba(52,101,176,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c9ac9', endColorstr='#3465b0', GradientType=0 );
-	}
-	&.ninthd {
-		background: rgba(111,122,128,1);
-		background: -moz-linear-gradient(top, rgba(111,122,128,1) 0%, rgba(45,45,48,1) 100%);
-		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(111,122,128,1)), color-stop(100%, rgba(45,45,48,1)));
-		background: -webkit-linear-gradient(top, rgba(111,122,128,1) 0%, rgba(45,45,48,1) 100%);
-		background: -o-linear-gradient(top, rgba(111,122,128,1) 0%, rgba(45,45,48,1) 100%);
-		background: -ms-linear-gradient(top, rgba(111,122,128,1) 0%, rgba(45,45,48,1) 100%);
-		background: linear-gradient(to bottom, rgba(111,122,128,1) 0%, rgba(45,45,48,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f7a80', endColorstr='#2d2d30', GradientType=0 );
-	}
-	&.kareo {
-		background: rgba(247,145,29,1);
-		background: -moz-linear-gradient(top, rgba(247,145,29,1) 0%, rgba(243,122,24,1) 28%, rgba(235,80,14,1) 79%);
-		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(247,145,29,1)), color-stop(28%, rgba(243,122,24,1)), color-stop(79%, rgba(235,80,14,1)));
-		background: -webkit-linear-gradient(top, rgba(247,145,29,1) 0%, rgba(243,122,24,1) 28%, rgba(235,80,14,1) 79%);
-		background: -o-linear-gradient(top, rgba(247,145,29,1) 0%, rgba(243,122,24,1) 28%, rgba(235,80,14,1) 79%);
-		background: -ms-linear-gradient(top, rgba(247,145,29,1) 0%, rgba(243,122,24,1) 28%, rgba(235,80,14,1) 79%);
-		background: linear-gradient(to bottom, rgba(247,145,29,1) 0%, rgba(243,122,24,1) 28%, rgba(235,80,14,1) 79%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7911d', endColorstr='#eb500e', GradientType=0 );
 	}
 	&.misc {
 		background: rgba(245,73,30,1);
@@ -523,80 +495,54 @@ img.border { border: 1px solid #eee; }
 	}
 }
 
-
-.vcentered {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 10px 15px;
-  background: #f5f5f5;
- }
-
-.shift-left {
-    left: -15%;
-}
-
-
-
-/* Example Media Queries */
-
-@media screen and (max-width: 414px){
-	img.norm { width: 100%; }
-}
-
-@media screen and (max-width: 530px) {
-	h1 { font-size: 2.5em; }
-	p, ul { font-size: 1.5em; }
-	.intro { padding-bottom: 10em; }
-	.grid figure img {
-		height: auto;
-		width: 100%;
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	.hero {
+		height: 380px;
 	}
-	.social {
-		.blue, .purple, .teal {
-			padding: 3em 0;
+	.wrapper {
+		padding: 0;
+	}
+	.row {
+		margin: auto 0;
+	}
+	h1 {
+		font-size: 1.75em;
+		line-height: 1.5;
+		margin: 0;
+		padding: 2em 1em;
+	}
+	.projects {
+		a {
+			img {
+				width: 100%;
+			}
 		}
 	}
-	.fa-5x { font-size: 3em; }
-	.gallery {
-		height: auto;
-		width: 100%;
+	img.sf, img.ny {
+		display: none;
 	}
-	img { margin-bottom: 2em;}
-
-	footer {
-		padding: 2em;
-		p { text-align: center !important; }
-		.icons { text-align: center; margin: 1em auto; }
+	.wall {
+		margin: 4em 0 6em;
+		min-height: 820px;
+	}
+	.about {
+		.content {
+			font-size: 20px;
+			margin: 0 3em;
+		}
 	}
 }
 
-@media screen and (max-width: 700px){
-	img.normalize { width: 100%; }
-}
-
-@media screen and (max-width: 990px) {
-	.content {
-		padding: 0 10px;
-		text-align: center;
+@media screen and (max-width: 414px){
+	.wall {
+		margin: 4em 0 6em;
+		min-height: 740px;
 	}
-	.grid figure {
-		display: inline-block;
-		float: none;
-		width: 100%;
-	}
-	.grid figure img {
-		left: 0;
-		margin: 1.5em auto;
-	}
-	.row { margin: 0 auto;}
-	.proj-nav, .text-right { text-align: center !important; }
-	.mbxl { margin-bottom: 2em !important; }
-	a.button { border: none; line-height: 5em; }
-}
-
-
-@media screen and (min-width: 991px) and (max-width: 1024px) {
-	.grid figure img {
-		left: -32.5%;
+	.about {
+		.content {
+			font-size: 20px;
+			margin: 0 1em;
+		}
 	}
 }
