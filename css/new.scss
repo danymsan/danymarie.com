@@ -56,9 +56,8 @@
 @import "partials/responsive-utilities";
 
 // Variables
-$black: #444;
+$black: #212121;
 $blue: #2d79b1;
-$bluelink: #428bca;
 $coral: #FF5E62;
 $gold: #F7B733;
 $grey: #777;
@@ -109,7 +108,6 @@ a {
   &.button {
     padding: 1em 1.5em;
     background-color: white;
-    border: 1px solid $bluelink;
     border-radius: 3px 3px 3px 3px;
 		-moz-border-radius: 3px 3px 3px 3px;
 		-webkit-border-radius: 3px 3px 3px 3px;
@@ -120,7 +118,6 @@ a {
 		transition: all .15s ease-in-out;
 
 		&:hover, &:focus {
-			background-color: $bluelink;
 			color: white;
 		}
   }
@@ -329,7 +326,7 @@ img.sf, img.ny {
 
 .about {
 	.content {
-		color: #212121;
+		color: $black;
 		font-size: 20px;
 		margin-left: 2em;
 		top: 100px;
@@ -348,7 +345,12 @@ img.sf, img.ny {
 }
 
 //Color
+.black {color: $black;}
+.blue {color: $blue;}
 .coral {color: $coral;}
+.gold {color: $gold;}
+.purple {color: $purple;}
+.teal {color: $teal;}
 
 
 // Margins
@@ -410,47 +412,6 @@ img.sf, img.ny {
 }
 
 
-// Nav
-nav {
-	&.container { padding: 2em 0 6em 0; }
-	&.nav-main {
-		min-height: 100%;
-	    display:table;
-	    height:inherit;
-	}
-	.nav-row { display: table-row; height: 100%; }
-	.nav-col { display: table-cell; vertical-align: middle; float: none; }
-	p {
-		color: white;
-		font-size: .8em;
-		font-family: 'Rock Salt', cursive, sans-serif;
-		letter-spacing: .125em;
-		margin: 0;
-		opacity: .25;
-	}
-
-	h1 { margin: 0; }
-
-	a.icon-home {
-		display: inline-block;
-		color: white; opacity: .5;
-		-webkit-transition: all .15s ease-in-out;
-		-moz-transition: all .15s ease-in-out;
-		-o-transition: all .15s ease-in-out;
-		transition: all .15s ease-in-out;
-
-		&:hover, &focus {
-			opacity: 1;
-			text-shadow: 0 1px 0 rgba(17, 17, 17, .3);
-			-ms-transform: scale(1.2); /* IE 9 */
-		    -webkit-transform: scale(1.2); /* Safari */
-		    transform: scale(1.2);
-
-		}
-	}
-
-}
-
 
 .glow {
 	-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
@@ -460,38 +421,6 @@ nav {
 
 
 // Project Styles
-.proj-ta {
-	@include thumbnail('../img/tn-ta.jpg');
-}
-
-.proj-nook {
-	@include thumbnail('../img/tn-nookpress.jpg');
-}
-
-.proj-9d {
-	@include thumbnail('../img/tn-9d.jpg');
-}
-
-.proj-kareo {
-	@include thumbnail('../img/tn-kareo.jpg');
-}
-
-.proj-ehr {
-	@include thumbnail('../img/tn-ehr.jpg');
-}
-
-.proj-misc {
-	@include thumbnail('../img/tn-misc.jpg');
-}
-
-.proj-att {
-	@include thumbnail('../img/tn-att.jpg');
-}
-
-.proj-empty {
-	@include thumbnail('../img/tn-empty.jpg');
-}
-
 .proj-header {
 	.container { padding-bottom: 6em; }
 	&.thinkalike {
@@ -549,35 +478,11 @@ nav {
 
 img.border { border: 1px solid #eee; }
 
-.border-top { border-top: 1px solid $lightgrey; }
-
-.gallery { height: 400px; background-position: center; overflow: hidden; }
-
-.dark-grey { background-color: $dark-grey; }
 
 .social {
-	overflow: hidden;
-	text-align: center;
-	.blue, .purple, .teal {
-		height: 100%;
-		color: white;
-		padding: 5.5em 0;
-		-webkit-transition: all .5s ease-in-out;
-		-moz-transition: all .5s ease-in-out;
-		-o-transition: all .5s ease-in-out;
-		transition: all .5s ease-in-out;
-	}
-	.blue {
-		background-color: $blue;
-		&:hover, &:focus { background-color: darken( $blue, 10% ); }
-	}
-	.purple {
-		background-color: $purple;
-		&:hover, &:focus { background-color: darken( $purple, 10% ); }
-	}
-	.teal {
-		background-color: $teal;
-		&:hover, &:focus { background-color: darken( $teal, 10% ); }
+	font-size: 24px;
+	i {
+		margin-right: 1em;
 	}
 }
 
@@ -593,20 +498,6 @@ img.border { border: 1px solid #eee; }
     left: -15%;
 }
 
-
-// Footer
-footer {
-	background-color: $lightergrey;
-	padding: 4em 0;
-	a {
-		color: $grey;
-		font-size: 1.5em;
-		padding-right: 1em;
-		:last-child { padding-right: 0; }
-	}
-	p { font-family: 'Rock Salt', sans-serif; font-size: 1em; margin: 0; }
-	.icons { text-align: right; }
-}
 
 
 /* Example Media Queries */

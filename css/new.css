@@ -5021,7 +5021,6 @@ a {
   a.button {
     padding: 1em 1.5em;
     background-color: white;
-    border: 1px solid #428bca;
     border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 3px 3px 3px 3px;
     -webkit-border-radius: 3px 3px 3px 3px;
@@ -5030,7 +5029,6 @@ a {
     -o-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out; }
     a.button:hover, a.button:focus {
-      background-color: #428bca;
       color: white; }
 
 a img {
@@ -5208,8 +5206,23 @@ img.sf, img.ny {
   float: right;
   right: 0; }
 
+.black {
+  color: #212121; }
+
+.blue {
+  color: #2d79b1; }
+
 .coral {
   color: #FF5E62; }
+
+.gold {
+  color: #F7B733; }
+
+.purple {
+  color: #794ba3; }
+
+.teal {
+  color: #22C1C3; }
 
 .mbxl {
   margin-bottom: 8em !important; }
@@ -5276,81 +5289,10 @@ img.sf, img.ny {
   margin-right: auto;
   display: block; }
 
-nav.container {
-  padding: 2em 0 6em 0; }
-nav.nav-main {
-  min-height: 100%;
-  display: table;
-  height: inherit; }
-nav .nav-row {
-  display: table-row;
-  height: 100%; }
-nav .nav-col {
-  display: table-cell;
-  vertical-align: middle;
-  float: none; }
-nav p {
-  color: white;
-  font-size: .8em;
-  font-family: 'Rock Salt', cursive, sans-serif;
-  letter-spacing: .125em;
-  margin: 0;
-  opacity: .25; }
-nav h1 {
-  margin: 0; }
-nav a.icon-home {
-  display: inline-block;
-  color: white;
-  opacity: .5;
-  -webkit-transition: all .15s ease-in-out;
-  -moz-transition: all .15s ease-in-out;
-  -o-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out; }
-  nav a.icon-home:hover, nav a.icon-homefocus {
-    opacity: 1;
-    text-shadow: 0 1px 0 rgba(17, 17, 17, 0.3);
-    -ms-transform: scale(1.2);
-    /* IE 9 */
-    -webkit-transform: scale(1.2);
-    /* Safari */
-    transform: scale(1.2); }
-
 .glow {
   -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.75); }
-
-.proj-ta {
-  background: url("../img/tn-ta.jpg") no-repeat center;
-  height: 300px; }
-
-.proj-nook {
-  background: url("../img/tn-nookpress.jpg") no-repeat center;
-  height: 300px; }
-
-.proj-9d {
-  background: url("../img/tn-9d.jpg") no-repeat center;
-  height: 300px; }
-
-.proj-kareo {
-  background: url("../img/tn-kareo.jpg") no-repeat center;
-  height: 300px; }
-
-.proj-ehr {
-  background: url("../img/tn-ehr.jpg") no-repeat center;
-  height: 300px; }
-
-.proj-misc {
-  background: url("../img/tn-misc.jpg") no-repeat center;
-  height: 300px; }
-
-.proj-att {
-  background: url("../img/tn-att.jpg") no-repeat center;
-  height: 300px; }
-
-.proj-empty {
-  background: url("../img/tn-empty.jpg") no-repeat center;
-  height: 300px; }
 
 .proj-header .container {
   padding-bottom: 6em; }
@@ -5403,40 +5345,10 @@ nav a.icon-home {
 img.border {
   border: 1px solid #eee; }
 
-.border-top {
-  border-top: 1px solid #eee; }
-
-.gallery {
-  height: 400px;
-  background-position: center;
-  overflow: hidden; }
-
-.dark-grey {
-  background-color: #444; }
-
 .social {
-  overflow: hidden;
-  text-align: center; }
-  .social .blue, .social .purple, .social .teal {
-    height: 100%;
-    color: white;
-    padding: 5.5em 0;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out; }
-  .social .blue {
-    background-color: #2d79b1; }
-    .social .blue:hover, .social .blue:focus {
-      background-color: #235d88; }
-  .social .purple {
-    background-color: #794ba3; }
-    .social .purple:hover, .social .purple:focus {
-      background-color: #5f3b80; }
-  .social .teal {
-    background-color: #22C1C3; }
-    .social .teal:hover, .social .teal:focus {
-      background-color: #1a9698; }
+  font-size: 24px; }
+  .social i {
+    margin-right: 1em; }
 
 .vcentered {
   display: inline-block;
@@ -5446,22 +5358,6 @@ img.border {
 
 .shift-left {
   left: -15%; }
-
-footer {
-  background-color: #f8f8f8;
-  padding: 4em 0; }
-  footer a {
-    color: #777;
-    font-size: 1.5em;
-    padding-right: 1em; }
-    footer a :last-child {
-      padding-right: 0; }
-  footer p {
-    font-family: 'Rock Salt', sans-serif;
-    font-size: 1em;
-    margin: 0; }
-  footer .icons {
-    text-align: right; }
 
 /* Example Media Queries */
 @media screen and (max-width: 414px) {
