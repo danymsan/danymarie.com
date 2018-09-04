@@ -327,7 +327,6 @@ svg {
 			color: #fff;
 			opacity: .7;
 			margin: 0 auto;
-			width: 80%;
 		}
 	}
 }
@@ -606,7 +605,7 @@ footer {
 		padding: 0;
 	}
 	.projects {
-		margin-top: -80px;
+		margin: -80px 0 0;
 		.card {
 			padding: 4em .75em;
 		}
@@ -642,10 +641,11 @@ footer {
 		padding: 0;
 	}
 	.projects {
-		margin-top: -50px;
+		margin: -50px 0 0;
 		h3 {font-size: 1.5em;}
 		.card {
-			padding: 3em .8em;
+			padding: 3em 1.5em 2.5em;
+			height: 388px;
 		}
 		a {
 			img {
@@ -666,7 +666,7 @@ footer {
 	}
 	.wall {
 		margin: 4em 0 6em;
-		min-height: 580px;
+		min-height: 600px;
 		img.ny {
 			right: -40px;
 		}
@@ -790,7 +790,7 @@ footer {
 	}
 	.proj-header {
 		height: 340px;
-		padding: .5em 2em;
+		padding: 0 2em;
 		.proj-title {
 	    margin: 1em 0 0;
 			padding: 0;
