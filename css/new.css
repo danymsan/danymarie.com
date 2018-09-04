@@ -5611,7 +5611,7 @@ footer {
 
   .proj-header {
     height: 340px;
-    padding: 1em 2em; }
+    padding: .5em 2em; }
     .proj-header .proj-title {
       margin: 1em 0 0;
       padding: 0; }
