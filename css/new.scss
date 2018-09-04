@@ -320,10 +320,9 @@ svg {
 		}
 	}
 	.card {
-			padding: 4em 3em;
+			padding: 4em;
 			text-align: center;
 		p{
-			font-size: 16px;
 			color: #fff;
 			opacity: .7;
 			margin: 0 auto;
@@ -646,6 +645,10 @@ footer {
 		.card {
 			padding: 3em 1.5em 2.5em;
 			height: 388px;
+			p {
+				font-size: 16px;
+				width: 100%;
+			}
 		}
 		a {
 			img {
