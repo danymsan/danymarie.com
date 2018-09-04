@@ -410,6 +410,7 @@ svg {
 	min-height: 600px;
 	display: block;
   position: relative;
+	overflow: hidden;
 }
 
 .wall:after {
@@ -508,6 +509,7 @@ img.sf, img.ny {
 }
 
 .proj-content {
+	overflow-x: hidden;
 	p {
 		color: $grey;
 	}
@@ -665,11 +667,14 @@ footer {
 	.wall {
 		margin: 4em 0 6em;
 		min-height: 580px;
+		img.ny {
+			right: -40px;
+		}
 	}
 	.about {
 		.content {
 			font-size: 20px;
-			margin: 0 3em;
+			margin: 0;
 		}
 	}
 
@@ -746,7 +751,7 @@ footer {
 
 @media screen and (max-width: 480px) {
 	.projects {
-		margin-top: 0;
+		margin: 0;
 	}
 	.card {
 			height: auto;

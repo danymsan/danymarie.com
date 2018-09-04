@@ -5313,7 +5313,8 @@ svg {
   margin: 8em 0;
   min-height: 600px;
   display: block;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .wall:after {
   content: "";
@@ -5387,31 +5388,33 @@ img.sf, img.ny {
       .proj-header .social i.fa-envelope {
         margin-right: 0; }
 
-.proj-content p {
-  color: #777; }
-.proj-content h3 {
-  font-size: 2.5em; }
-.proj-content h4 {
-  text-transform: uppercase;
-  margin-bottom: 1.5em; }
-.proj-content .bold {
-  font-weight: 600; }
-.proj-content img {
-  -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1); }
-.proj-content section {
-  padding: 3em 0 6em; }
-  .proj-content section.black {
-    background-color: #212121; }
-  .proj-content section.grey {
-    background-color: #f8f8f8; }
-.proj-content .caption {
-  color: #777;
-  font-size: 13px;
-  margin: 1.5em 0;
-  display: block;
-  text-align: center; }
+.proj-content {
+  overflow-x: hidden; }
+  .proj-content p {
+    color: #777; }
+  .proj-content h3 {
+    font-size: 2.5em; }
+  .proj-content h4 {
+    text-transform: uppercase;
+    margin-bottom: 1.5em; }
+  .proj-content .bold {
+    font-weight: 600; }
+  .proj-content img {
+    -webkit-box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1); }
+  .proj-content section {
+    padding: 3em 0 6em; }
+    .proj-content section.black {
+      background-color: #212121; }
+    .proj-content section.grey {
+      background-color: #f8f8f8; }
+  .proj-content .caption {
+    color: #777;
+    font-size: 13px;
+    margin: 1.5em 0;
+    display: block;
+    text-align: center; }
 
 video {
   width: 100%;
@@ -5513,10 +5516,12 @@ footer {
   .wall {
     margin: 4em 0 6em;
     min-height: 580px; }
+    .wall img.ny {
+      right: -40px; }
 
   .about .content {
     font-size: 20px;
-    margin: 0 3em; }
+    margin: 0; }
 
   .proj-header {
     padding: 1em 3em; }
@@ -5572,7 +5577,7 @@ footer {
     height: auto; } }
 @media screen and (max-width: 480px) {
   .projects {
-    margin-top: 0; }
+    margin: 0; }
 
   .card {
     height: auto; }
