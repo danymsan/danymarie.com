@@ -5040,6 +5040,10 @@ ul {
 li {
   list-style: none; }
 
+rt {
+  font-size: inherit;
+  display: inline; }
+
 .black-txt {
   color: #212121; }
 
@@ -5385,6 +5389,12 @@ img.sf, img.ny {
       .proj-header .social i.fa-envelope {
         margin-right: 0; }
 
+.role, .copyright {
+  float: left !important; }
+
+.tldr, .more-proj {
+  float: right !important; }
+
 .proj-content {
   overflow-x: hidden; }
   .proj-content p {
@@ -5446,7 +5456,7 @@ img.border {
     margin-right: 1em; }
 
 footer {
-  padding: 2em 0 3em; }
+  padding: 2em 0; }
   footer .logo {
     opacity: 1; }
   footer p {

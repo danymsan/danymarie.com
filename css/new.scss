@@ -128,6 +128,12 @@ ul { padding: 0; }
 
 li { list-style: none; }
 
+rt {
+    font-size: inherit;
+		display: inline;
+
+}
+
 //Text Color
 .black-txt 	{color: $black;}
 .blue-txt 	{color: $blue;}
@@ -505,6 +511,9 @@ img.sf, img.ny {
 	}
 }
 
+.role, .copyright {float: left !important;}
+.tldr, .more-proj {float: right !important;}
+
 .proj-content {
 	overflow-x: hidden;
 	p {
@@ -565,7 +574,7 @@ img.border { border: 1px solid #eee; }
 }
 
 footer {
-	padding: 2em 0 3em;
+	padding: 2em 0;
 	.logo {
 		opacity: 1;
 	}
